@@ -29,12 +29,13 @@ class App extends React.Component
                 </div>
 
                 <div> 
-                    <a href = '/website/ContactForm' className = "block px-4 py-2 text-md font-extrabold text-gray-700 rounded-md hover:bg-white"> Contact Me   </a>
+                    <Link to = '/website/Contact' className = "block px-4 py-2 text-md font-extrabold text-gray-700 rounded-md hover:bg-white"> Contact Me   </Link>
                 </div>
                 
             </nav>
             </div>
             </div>
+
             <Switch>
           
           <Route path="/website/Projects">
@@ -42,11 +43,13 @@ class App extends React.Component
           <Projects/> 
           </div>
           </Route>
-          <Route path ="/website/ContactForm">
+
+          <Route path ="/website/Contact">
           <div  className = "bg-gray-600" >
           <ContactForm/>
           </div>
           </Route>
+
           <Route path="/website">
           <div className = "bg-gray-100">
             <div> <AboutMe/> </div>
@@ -55,6 +58,7 @@ class App extends React.Component
             <div className ='bg-gray-600'> <div className = 'mt-20 p-10'> <ContactForm/> </div></div>
             </div>
           </Route>
+
         </Switch>
         </Router>
     )
