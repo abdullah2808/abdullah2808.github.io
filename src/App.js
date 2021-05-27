@@ -21,15 +21,15 @@ class App extends React.Component
             <nav className = "flex justify-between " >
                 <div>
                     <ul className = 'flex flex-rows'>
-                        <li><Link to = "/" className = "block px-4 py-2 text-md font-extrabold text-gray-700 rounded-md hover:bg-white"> Home         </Link></li>
-                        <li><Link to = '/Projects' className = "block px-4 py-2 text-md font-extrabold text-gray-700 rounded-md hover:bg-white"> Projects     </Link> </li>
+                        <li><Link to = "/website" className = "block px-4 py-2 text-md font-extrabold text-gray-700 rounded-md hover:bg-white"> Home         </Link></li>
+                        <li><Link to = '/website/Projects' className = "block px-4 py-2 text-md font-extrabold text-gray-700 rounded-md hover:bg-white"> Projects     </Link> </li>
                         <li><a href = 'https://github.com/abdullah2808/' className = "block px-4 py-2 text-md font-extrabold text-gray-700 rounded-md hover:bg-white" target="_blank"> GitHub    </a></li>
                         <li><a href = {Pdf} className = "block px-4 py-2 text-md font-extrabold text-gray-700 rounded-md hover:bg-white" target="_blank"> Resume       </a></li>
                     </ul>
                 </div>
 
                 <div> 
-                    <a href = '/ContactForm' className = "block px-4 py-2 text-md font-extrabold text-gray-700 rounded-md hover:bg-white"> Contact Me   </a>
+                    <a href = '/website/ContactForm' className = "block px-4 py-2 text-md font-extrabold text-gray-700 rounded-md hover:bg-white"> Contact Me   </a>
                 </div>
                 
             </nav>
@@ -37,17 +37,17 @@ class App extends React.Component
             </div>
             <Switch>
           
-          <Route path="/Projects">
+          <Route path="/website/Projects">
           <div className = "bg-gray-100 pt-10">
           <Projects/> 
           </div>
           </Route>
-          <Route path ="/ContactForm">
+          <Route path ="/website/ContactForm">
           <div  className = "bg-gray-600" >
           <ContactForm/>
           </div>
           </Route>
-          <Route path="/">
+          <Route path="/website">
           <div className = "bg-gray-100">
             <div> <AboutMe/> </div>
             <div classname = "rounded-b-lg"> <MainContent/> </div>
